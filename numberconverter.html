@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        
+        header {
+            background-color: rgb(230, 191, 217);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        
+        
+        section {
+            display: -webkit-flex;
+            display: flex;
+            height: 800px;
+        }
+        
+        
+        nav {
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            background:rgb(9, 24, 18);
+            padding: 5px;
+            width:30px;
+        }
+        
+        
+        nav ul {
+            list-style-type: none;
+            padding: 10px;
+            border:solid ;
+            border-color:  rgb(189, 247, 227);
+            text-align : center ;
+            font-size: 20px;
+           font-family: Georgia, 'Times New Roman', Times, serif ;
+           background-color:  rgb(189, 247, 227)
+        }
+        
+       
+        article {
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+        
+        
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        
+        
+        @media (max-width: 600px) {
+            section {
+              -webkit-flex-direction: column;
+              flex-direction: column;
+            }
+        }
+        
+           .topnav input[type=text] {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+            .topnav input[type=text] {
+                border: 1px solid #ccc;
+            }
+        }
+        </style>
+        
+        
+        
+        </head>
+        <body>
+        
+        
+      
+        
+        <section>
+          <nav>
+            <ul>
+              <menu><a href=numberconverter.html>NUMBER CONVERTER</a></menu>
+             
+            </ul>
+            <ul>
+                <menu><a href=conversiontable.html>CONVERSION TABLES</a></menu>
+            </ul>
+            <ul>
+                <menu><a href=combinatorics.html>COMBINATORICS</a></menu>
+            </ul>
+            <ul>
+                <menu><a href=truthtable.html>TRUTH TABLES</a></menu>
+            </ul>
+        
+            <ul>
+                <menu><a href=randomvalues.html>RANDOM VALUES</a></menu>
+            </ul>
+        
+        </nav>
+         
+          
+          <article>
+            <style>
+                #bin{
+             
+                    width : 300px;
+                    height : 70px;
+                    align: middle ;
+                   }
+                   #dec{
+                    width : 300px;
+                    height : 70px;
+                    
+                   }
+            #hex{
+                width : 300px;
+                    height : 70px;
+                
+            }
+            #oct{
+                width : 300px;
+                    height : 70px;
+                    }
+
+            .input
+            {
+                text-align: center ;
+                align: middle ;
+
+            }
+            </style>
+            <html>
+                    <body>
+                <script>
+                    function id(id) {
+                        return document.getElementById(id);
+                      }
+                      function Convert(s, n) {
+                        if(parseInt(id(s).value, n)) {
+                    if("bin" != s) { id("bin").value = parseInt(id(s).value, n).toString(2) }
+                    if("oct" != s) { id("oct").value = parseInt(id(s).value, n).toString(8) }
+                    if("dec" != s) { id("dec").value = parseInt(id(s).value, n).toString(10) }
+                    if("hex" != s) { id("hex").value = parseInt(id(s).value, n).toString(16) }
+                  } else {
+                    if("bin" != s) { id("bin").value = "" }
+                    if("oct" != s) { id("oct").value = "" }
+                    if("dec" != s) { id("dec").value = "" }
+                    if("hex" != s) { id("hex").value = "" }
+                  }
+                }
+            </script>
+            <div id="animal">
+                <center><h2><p>CONVERTER NUMBER</p></h2></center>
+                <p>BINARY</p>
+                <input id="bin" oninput="Convert('bin', 2)" placeholder="bin" spellcheck="false"><br>
+               <p>OCTAL</p>
+                <input  id="oct" oninput="Convert('oct', 8)" placeholder="oct" spellcheck="false"><br>
+                <p>DECIMAL</p>
+                <input  id="dec" oninput="Convert('dec', 10)" placeholder="dec" spellcheck="false"><br>
+                <p>HEXADECIMAL</p>
+                <input  id="hex" oninput="Convert('hex', 16)" placeholder="hex" spellcheck="false"><br>
+    
+                
+            </div>
+            </body>
+          </article>
+        </section>
+        
+        <footer>
+          <p>Footer</p>
+        </footer>
+        
+        </body>
+
+
+</html>
