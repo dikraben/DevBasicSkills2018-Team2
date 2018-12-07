@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background-color:white;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+section {
+    display: -webkit-flex;
+    display: flex;
+    height: 800px;
+}
+
+
+nav {
+  -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background:rgb(9, 24, 18);
+    padding: 5px;
+    width:30px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    border:solid ;
+    border-color: rgb(189, 247, 227);
+    text-align : center ;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    background-color: rgb(189, 247, 227) ;
+
+}
+
+
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+}
+
+   .topnav input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+</style>
+
+
+
+</head>
+<body>
+
+
+
+<section>
+  <nav>
+    <ul>
+      <menu><a href=numberconverter.html>NUMBER CONVERTER</a></menu>
+     
+    </ul>
+    <ul>
+        <menu><a href=conversiontable.html>CONVERSION TABLES</a></menu>
+    </ul>
+    <ul>
+        <menu><a href=comninatorics.html>COMBINATORICS</a></menu>
+    </ul>
+    <ul>
+        <menu><a href=truthtable.html>TRUTH TABLE</a></menu>
+    </ul>
+
+    <ul>
+        <menu><a href="#">RANDOM VALUES</a></menu>
+    </ul>
+
+</nav>
+ 
+  
+  <article align=center  >
+     <div> <html>
+          
+        <p>
+                Formula(n,r): <code> nCr=n!(n−r)!r!</code>
+              </p>
+              
+             <hr>
+              
+              calculate: <input type="text" placeholder="n" id="n" /> <input type="text" placeholder="r" id="r" /> <button id="calculate">calculate</button>
+              <hr>
+              
+              
+              <strong>result:</strong> <span id="result">-</span> combinations
+            </div>
+            <style>
+
+        .article1 
+        {
+          border-style: double ;
+          border-color: antiquewhite;
+          background-color: aquamarine ;
+          border-width: 40px;
+        }
+
+        .hr 
+        {
+       display=block ;
+       margin-top=6em;
+       margin-left=auto;
+       margin-right= auto;
+       ;
+       float: left;;
+        
+        }
+            
+            input {
+  
+  text-align: center;
+  height: 40px;
+}
+code {
+  background: beige;
+  font-family: 'Courier New', Courier, monospace ;
+  font-size: 20px;
+  text-emphasis-color: white ;
+}
+            </style>
+    
+            <body>
+         <script>
+         function factorial(number){
+  var value = number;
+  for ( var i = number; i > 1; i-- )
+    value *= i - 1;
+  return value;
+};
+function combination(n, r){
+  if ( n == r) return 1;
+  return factorial(n) / (factorial(r) * factorial(n - r));
+};
+
+document.getElementById('calculate').onclick = function(){
+  var n = parseFloat(document.getElementById('n').value),
+      r = parseFloat(document.getElementById('r').value);
+  if ( n && r ){
+    document.getElementById('result').innerHTML = combination(n,r);
+  }
+};
+         
+         </script>
+
+
+            </body>
+   
+              </html>
+            </div>
+
+            <style>
+            div
+            {
+              border-style: solid ;
+              background :rgb(173, 145, 145);
+
+            }
+            
+            </style>
+  </article>
+     </section>
+     
+     <section>
+       <nav>
+
+       </nav>
+   <article align=center >
+     <div>
+    <html>
+          
+        <p>
+                Formula(n,r): <code> P(n,r)=n!(n−r)!</code>
+              </p>
+              
+             <hr>
+              
+              calculate: <input type="text" placeholder="n" id="n1" /> <input type="text" placeholder="r" id="r1" /> <button id="calculate1" onclick="permutations()">calculate</button>
+              <hr>
+              
+              
+              <strong>result:</strong> <span id="result">-</span> permutations
+            
+            <style>
+
+        .hr 
+        {
+       display=block ;
+       margin-top=6em;
+       margin-left=auto;
+       margin-right= auto;
+       ;
+       float: left;;
+        
+        }
+            
+            input {
+  
+  text-align: center;
+  height: 40px;
+}
+code {
+  background: beige;
+  font-family: 'Courier New', Courier, monospace ;
+  font-size: 20px;
+  text-emphasis-color: white ;
+}
+            </style>
+    
+            <body>
+         <script>
+         function factorial(number){
+  var value = number;
+  for ( var i = number; i > 1; i-- )
+    value *= i - 1;
+  return value;
+};
+function permutation(n, r);
+{
+  if ( n == r) return 1;
+  return factorial(n) / factorial(n - r) );
+};
+
+document.getElementById('calculate').onclick = function(){
+  var n1 = parseFloat(document.getElementById('n1').value),
+      r1 = parseFloat(document.getElementById('r1').value);
+  if ( n && r ){
+    document.getElementById('result').innerHTML = permutation(n,r);
+  }
+};
+         
+         </script>
+
+
+            </body>
+   
+              </html>
+            </div>
+            </article>
+            <style>
+            article
+            {
+              padding: none ;
+              width: 60px;
+              height:30px;
+            }
+            
+            </style>
+        </section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
