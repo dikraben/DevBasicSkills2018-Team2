@@ -92,23 +92,29 @@ article {
 
 
 <section>
+    
   
   <article align=center  >
+
      <div id="class1"> <html>
           
         <p>
-                Formula(n,r): <code> nCr=n!(n−r)!r!</code>
+                <code> nCr=n!/(n−r)!r!</code>
               </p>
               
-             <hr>
+             <br>
               
-              calculate: <input type="text" placeholder="n" id="n" /> <input type="text" placeholder="r" id="r" /> <button id="calculate">calculate</button>
-              <hr>
+              <input type="text" placeholder="n" id="n" /> <input type="text" placeholder="r" id="r" /> <button id="calculate">calculate</button>
               
               
-              <strong>result:</strong> <span id="result">-</span> combinations
+              <br>
+              <strong></strong> <span id="result">-</span style="margin-top:10px"> combinations
             </div>
             <style>
+              .result 
+              {
+                margin-top: 20px;
+              }
         #class1{
           display: block;
           margin-top: 110px;
@@ -173,11 +179,12 @@ document.getElementById('calculate').onclick = function(){
           
         <div id="class2">
             <p>
-               Formula(n,r): <code> P(n,r)=n!(n−r)!</code>
+               <code> P(n,r)=n!/(n−r)!</code>
             </p>
-            <hr>
-            calculate: <input type="text" placeholder="n" id="n1" /> <input type="text" placeholder="r" id="r1" /> <button id="calculate1" onclick="permutations()">calculate</button><hr>
-            <strong>result:</strong> <span id="result1">-</span> permutations
+            <br>
+             <input type="text" placeholder="n" id="n1" /> <input type="text" placeholder="r" id="r1" /> <button id="calculate1" onclick="permutations()"> calculate</button>
+            <br>
+             <span id="result1">-</span> permutations
          </div>
             
             <style>
