@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <header>Mathematics Tools </header>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -11,15 +11,16 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    height: 80%;
 }
 
 
 header {
-    background-color:white;
+    background-color:rgb(47, 51, 34);
     padding: 30px;
     text-align: center;
-    font-size: 35px;
-    color: black;
+    font-size: 50px;
+    color: rgb(255, 250, 219);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
@@ -27,68 +28,24 @@ header {
 section {
     display: -webkit-flex;
     display: flex;
-    height: 800px;
+    height: 425px;
+    background-color:rgb(74, 80, 52);
 }
 
 
-nav {
-  -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    background:rgb(9, 24, 18);
-    padding: 5px;
-    width:30px;
-}
 
-
-nav ul {
-    list-style-type: none;
-    padding: 10px;
-    border:solid ;
-    border-color: rgb(189, 247, 227);
-    text-align : center ;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif ;
-    background-color: rgb(189, 247, 227) ;
-
-}
 
 
 article {
     -webkit-flex: 3;
     -ms-flex: 3;
     flex: 3;
-    background-color: #f1f1f1;
     padding: 10px;
 }
 
 
-footer {
-    background-color: #777;
-    padding: 10px;
-    text-align: center;
-    color: white;
-}
 
-@media (max-width: 600px) {
-    section {
-      -webkit-flex-direction: column;
-      flex-direction: column;
-    }
-}
 
-   .topnav input[type=text] {
-        float: none;
-        display: block;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 14px;
-    }
-    .topnav input[type=text] {
-        border: 1px solid #ccc;
-    }
-}
 </style>
 
 
@@ -96,33 +53,48 @@ footer {
 </head>
 <body>
 
+    <div class="navbar">
+        <a href="home.html">HOME</a>
+        <a href="numberconverter.html">NUMBER CONVERTER</a>
+        <a href="conversiontable.html">CONVERSION TABLE</a>
+        <a href="combinatorics.html">COMBINATORICS</a>
+        <a Href="truthtable.html">TRUTH TABLE</a>
+        <a Href="randomvalues.html">RANDOM VALUES</a>
+        <a Href="calculator.html">CALCULATOR</a>
+    </div>
+<style>
+
+.navbar {
+          overflow: hidden;
+          background-color: #CDA34F;
+         
+          top: 0;
+          width: 100%;
+          
+          
+        }
+        
+        .navbar a {
+          float: left;
+          color:#E9E7DA;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        .navbar a:hover {
+          background:rgb(54, 45, 21);
+          color:#373F27 ;
+        }
+        
+</style>
 
 
 <section>
-  <nav>
-    <ul>
-      <menu><a href=numberconverter.html>NUMBER CONVERTER</a></menu>
-     
-    </ul>
-    <ul>
-        <menu><a href=conversiontable.html>CONVERSION TABLES</a></menu>
-    </ul>
-    <ul>
-        <menu><a href=comninatorics.html>COMBINATORICS</a></menu>
-    </ul>
-    <ul>
-        <menu><a href=truthtable.html>TRUTH TABLE</a></menu>
-    </ul>
-
-    <ul>
-        <menu><a href="#">RANDOM VALUES</a></menu>
-    </ul>
-
-</nav>
- 
   
   <article align=center  >
-     <div> <html>
+     <div id="class1"> <html>
           
         <p>
                 Formula(n,r): <code> nCr=n!(n−r)!r!</code>
@@ -137,37 +109,31 @@ footer {
               <strong>result:</strong> <span id="result">-</span> combinations
             </div>
             <style>
-
-        .article1 
-        {
-          border-style: double ;
-          border-color: antiquewhite;
-          background-color: aquamarine ;
-          border-width: 40px;
+        #class1{
+          display: block;
+          margin-top: 110px;
+          margin-left: 400px;
+          margin-right: 400px;
+          padding: 40px ;
+          
         }
-
-        .hr 
-        {
-       display=block ;
-       margin-top=6em;
-       margin-left=auto;
-       margin-right= auto;
-       ;
-       float: left;;
         
-        }
-            
-            input {
-  
-  text-align: center;
-  height: 40px;
-}
-code {
-  background: beige;
-  font-family: 'Courier New', Courier, monospace ;
-  font-size: 20px;
-  text-emphasis-color: white ;
-}
+       input {
+      text-align: center;
+      height: 40px;
+       }
+
+       code {
+      background: beige;
+      font-family: 'Courier New', Courier, monospace ;
+      font-size: 20px;
+      text-emphasis-color: white ;
+      }
+         div
+            {
+              border-style: solid ;
+              background :rgb(226, 192, 122) ;
+            }
             </style>
     
             <body>
@@ -192,54 +158,43 @@ document.getElementById('calculate').onclick = function(){
 };
          
          </script>
+    
+    </div>
 
-
-            </body>
-   
-              </html>
-            </div>
-
-            <style>
-            div
-            {
-              border-style: solid ;
-              background :rgb(173, 145, 145);
-
-            }
-            
-            </style>
   </article>
-     </section>
      
-     <section>
-       <nav>
-
-       </nav>
+</section>
+<section>
+     
+       
    <article align=center >
-     <div>
+     
     <html>
           
-        <p>
-                Formula(n,r): <code> P(n,r)=n!(n−r)!</code>
-              </p>
-              
-             <hr>
-              
-              calculate: <input type="text" placeholder="n" id="n1" /> <input type="text" placeholder="r" id="r1" /> <button id="calculate1" onclick="permutations()">calculate</button>
-              <hr>
-              
-              
-              <strong>result:</strong> <span id="result">-</span> permutations
+        <div id="class2">
+            <p>
+               Formula(n,r): <code> P(n,r)=n!(n−r)!</code>
+            </p>
+            <hr>
+            calculate: <input type="text" placeholder="n" id="n1" /> <input type="text" placeholder="r" id="r1" /> <button id="calculate1" onclick="permutations()">calculate</button><hr>
+            <strong>result:</strong> <span id="result1">-</span> permutations
+         </div>
             
             <style>
+
+        #class2
+        {
+          margin-left: 400px;
+          margin-right: 400px;
+          padding: 40px ;
+        }
 
         .hr 
         {
-       display=block ;
-       margin-top=6em;
-       margin-left=auto;
-       margin-right= auto;
-       ;
+       display:block ;
+       margin-top:6em;
+       margin-left:auto;
+       margin-right:auto;
        float: left;;
         
         }
@@ -257,7 +212,7 @@ code {
 }
             </style>
     
-            <body>
+            
          <script>
          function factorial(number){
   var value = number;
@@ -265,24 +220,25 @@ code {
     value *= i - 1;
   return value;
 };
-function permutation(n, r);
-{
-  if ( n == r) return 1;
-  return factorial(n) / factorial(n - r) );
-};
 
-document.getElementById('calculate').onclick = function(){
-  var n1 = parseFloat(document.getElementById('n1').value),
-      r1 = parseFloat(document.getElementById('r1').value);
-  if ( n && r ){
-    document.getElementById('result').innerHTML = permutation(n,r);
-  }
-};
+function permutation(n, r){
+	if ( n == r) return 1;
+	return factorial(n) / factorial(n - r);
+}
+
+
+function permutations() {
+	var n1 = parseFloat(document.getElementById('n1').value),
+		r1 = parseFloat(document.getElementById('r1').value);
+	if ( n1 && r1 ){
+	document.getElementById('result1').innerHTML = permutation(n1,r1);
+	}
+}
          
          </script>
 
-
-            </body>
+       
+</section>
    
               </html>
             </div>
@@ -290,17 +246,16 @@ document.getElementById('calculate').onclick = function(){
             <style>
             article
             {
-              padding: none ;
-              width: 60px;
-              height:30px;
+              padding: auto ;
+              border: auto;
             }
             
             </style>
-        </section>
+        
 
-<footer>
-  <p>Footer</p>
-</footer>
+
 
 </body>
+
+
 </html>

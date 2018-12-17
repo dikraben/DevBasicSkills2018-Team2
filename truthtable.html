@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+        <header>Mathematics Tools </header>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -14,82 +14,31 @@ body {
 }
 
 
-header {
-    background-color: rgb(230, 191, 217);
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-
 section {
     display: -webkit-flex;
     display: flex;
-    height: 800px ;
+    height: 1500px ;
+    background-color: rgb(74, 80, 52) ;
    ;
 }
 
-
-nav {
-  -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    background:rgb(9, 24, 18);
-    padding: 5px;
-    width:30px;
-}
-
-
-nav ul {
-    list-style-type: none;
-    padding: 10px;
-    border:solid ;
-    border-color: rgb(189, 247, 227);
-    text-align : center ;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif ;
-    background-color: rgb(189, 247, 227) ;
-
-}
 
 article {
     -webkit-flex: 3;
     -ms-flex: 3;
     flex: 3;
-    background-color: #f1f1f1;
     padding: 10px;
 }
-
-
-footer {
-    background-color: #777;
-    padding: 10px;
+header {
+    background-color:rgb(47, 51, 34);
+    padding: 30px;
     text-align: center;
-    color: white;
+    font-size: 50px;
+    color:rgb(255, 250, 219) ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 
 
-@media (max-width: 600px) {
-    section {
-      -webkit-flex-direction: column;
-      flex-direction: column;
-    }
-}
-
-   .topnav input[type=text] {
-        float: none;
-        display: block;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 14px;
-    }
-    .topnav input[type=text] {
-        border: 1px solid #ccc;
-    }
-}
 </style>
 
 
@@ -97,42 +46,194 @@ footer {
 </head>
 <body>
 
+        <div class="navbar">
+                <a href="home.html">HOME</a>
+                <a href="numberconverter.html">NUMBER CONVERTER</a>
+                <a href="conversiontable.html">CONVERSION TABLE</a>
+                <a href="combinatorics.html">COMBINATORICS</a>
+                <a Href="truthtable.html">TRUTH TABLE</a>
+                <a Href="randomvalues.html">RANDOM VALUES</a>
+                <a Href="calculator.html">CALCULATOR</a>
+            </div>
+<style>
 
+.navbar {
+          overflow: hidden;
+          background-color:#CDA34F ;
+         
+          top: 0;
+          width: 100%;
+          
+          
+        }
+        
+        .navbar a {
+          float: left;
+          color:#E9E7DA;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        .navbar a:hover {
+          background:rgb(54, 45, 21);
+          color:#373F27;
+        }
+        
+
+</style>
 
 
 <section>
-  <nav>
-    <ul>
-      <menu><a href=numberconverter.html>NUMBER CONVERTER</a></menu>
-     
-    </ul>
-    <ul>
-        <menu><a href=conversiontable.html>CONVERSION TABLES</a></menu>
-    </ul>
-    <ul>
-        <menu><a href="#">COMBINATORICS</a></menu>
-    </ul>
-    <ul>
-        <menu><a href="#">TRUTH TABLE</a></menu>
-    </ul>
-
-    <ul>
-        <menu><a href="#">RANDOM VALUES</a></menu>
-    </ul>
-
-</nav>
- 
+  
   
   <article>
     
-  
+        <html>
+ 
+                <head>
+                   
+                 
+                   
+                   <header1 id="class"><center><span style="font-size: 30px"> <span style="color:rgb(255, 250, 219)">TRUTH TABLE</span>  </span></center></header1> 
+        
+                    <style>
+
+                     .cls
+                        {
+                            color: rgb(255, 250, 219)  ;
+                        }
+
+
+                        table {
+                            margin:auto;
+                            position: relative;
+                            text-align: center;
+                            border-spacing: 0px;
+                            width: 400px;
+                            height: 200px;
+                        }
+                       
+                 
+                        td,
+                        th {
+                            border: 2px groove#373F27 ;
+                            background-color: rgb(226, 192, 122) ;
+                 
+                        }
+
+
+
+                        
+                    </style>
+                    <b>
+                        <p style="font-size:18px" style="color:rgb(226, 192, 122)"><span style="color:rgb(255, 250, 219)">
+                            DISJUNCTION
+                            <div></div>
+                        </span>
+                        </p>
+                    </b>
+                    <table class="nable">
+                        <script>var A = true;
+                            var B = false;
+                            document.write("<tr><th> A </th><th> B </th><th> A || B </th></tr>");
+                            document.write("<tr><th> true </th><th> true </th><th>" + A + " </th></tr>");
+                            document.write("<tr><th> true </th><th> false </th><th> " + A + " </th></tr>");
+                            document.write("<tr><th> false </th><th> true </th><th> " + A + " </th></tr>");
+                            document.write("<tr><th> false</th><th> false </th><th> " + !A + " </th></tr>");
+                        </script>
+                    </table>
+                   <b> <p style="font-size:18px"><span style="color:rgb(255, 250, 219)">
+                        NEGATION
+                        <div>  </div>
+                    </span> </p></b>
+                    <table class="mable">
+                        <script>
+                            var A = true;
+                            var B = false;
+                            //x = i&&i;
+                            //y = i===j;
+                            if (A == true) {
+                                document.write("<tr><th> A </th><th> !A  </th></tr>");
+                                document.write("<tr><th> true </th><th>" + !A + "</th></tr>");
+                            }
+                            if (B == false) {
+                                document.write("<tr><th> false </th><th>" + !B + "</th></tr>");
+                            }
+                 
+                        </script>
+                    </table>
+                    <b>
+                        <p style="font-size:18px"><span style="color:rgb(255, 250, 219)">
+                            CONJUNTION
+                        </span>
+                        </p>
+                    </b>
+                    <table class=etable>
+                        <script>
+                            var A = true;
+                            var B = false;
+                            var x = A && B;
+                            if (A = true) {
+                                document.write("<tr><th> A </th><th> B </th><th> A && B </th></tr>");
+                                document.write("<tr><th> true </th><th> true </th><th>" + !x + " </th></tr>");
+                                document.write("<tr><th> true </th><th> false </th><th> " + x + " </th></tr>");
+                            }
+                            if (B == false) {
+                                document.write("<tr><th> false </th><th> true </th><th> " + x + " </th></tr>");
+                                document.write("<tr><th> false</th><th> false </th><th> " + !x + " </th></tr>");
+                            }
+                        </script>
+                    </table>
+                    <b>
+                        <p style="font-size:18px"><span style="color:rgb(255, 250, 219)">
+                            IMPLICATION
+                        </span>
+                        </p>
+                    </b>
+                    <table class="utable">
+                        <script>
+                            var A = true;
+                            var B = false;
+                 
+                            document.write("<tr><th> A </th><th> B </th><th> A -> B </th></tr>");
+                            document.write("<tr><th> true </th><th> true </th><th>" + A + " </th></tr>");
+                            document.write("<tr><th> true </th><th> false </th><th>" + !A + " </th></tr>");
+                            document.write("<tr><th> false </th><th> false </th><th>" + !B + " </th></tr>");
+                            document.write("<tr><th> false </th><th> true </th><th>" + !B + " </th></tr>");
+                 
+                        </script>
+                    </table>
+                    <b>
+                        <p style="font-size:18px"><span style="color:rgb(255, 250, 219)">
+                            BICONDITION
+                        </span>
+                        </p>
+                    </b>
+                    <table class="pable">
+                        <script>
+                            var A = true;
+                            var B = false;
+                            document.write("<tr><th> A </th><th> B </th><th> A === B </th></tr>");
+                            document.write("<tr><th> true </th><th> true </th><th>" + A + " </th></tr>");
+                            document.write("<tr><th> true </th><th> false </th><th>" + !A + " </th></tr>");
+                            document.write("<tr><th> false </th><th> false </th><th>" + !B + " </th></tr>");
+                            document.write("<tr><th> false </th><th> true </th><th>" + B + " </th></tr>");
+                        </script>
+                    </table>
+                </head>
+                 
+                <body>
+                 
+                </body>
+                 
+                </html>
 
   </article>
 </section>
 
-<footer>
-  <p>Footer</p>
-</footer>
+
 
 </body>
 </html>
